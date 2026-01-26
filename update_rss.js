@@ -8,9 +8,11 @@ function cdata(text = "") {
   return `<![CDATA[${text.replace(/]]>/g, "]]]]><![CDATA[>")}]]>`;
 }
 
-// Remove unsafe tags like <iframe>
 function sanitizeDescription(html = "") {
-  return html.replace(/<iframe[\s\S]*?<\/iframe>/gi, "");
+  return html
+    .replace(/<iframe[\s\S]*?<\/iframe>/gi, "")
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?<\/style>/gi, "");
 }
 
 async function run() {
@@ -29,19 +31,10 @@ async function run() {
   out += `<atom:link href="https://willztalks.com/rss.xml" rel="self" type="application/rss+xml" />`;
 
   for (const i of items) {
-    // fix guid
-    let guid = "";
-    if (i.guid?.[0]) {
-      if (typeof i.guid[0] === "object" && i.guid[0]._ != null) {
-        guid = i.guid[0]._;
-      } else if (typeof i.guid[0] === "string") {
-        guid = i.guid[0];
-      } else {
-        guid = i.link?.[0] ?? "";
-      }
-    } else {
-      guid = i.link?.[0] ?? "";
-    }
+    // safe guid
+    let guid = i.guid?.[0];
+    if (typeof guid === "object" && guid._) guid = guid._;
+    else if (typeof guid !== "string") guid = i.link?.[0] ?? "urn:uuid:" + Math.random().toString(36).slice(2);
 
     out += `<item>`;
     out += `<title>${cdata(i.title?.[0] ?? "")}</title>`;
