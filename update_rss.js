@@ -5,6 +5,11 @@ import fs from "fs";
 const SOURCE =
   "https://fetchrss.com/feed/1vBf4gGfS2h01vBf4M7VY2YW.rss";
 
+function cdata(text = "") {
+  // Prevent accidental CDATA termination
+  return `<![CDATA[${text.replace(/]]>/g, "]]]]><![CDATA[>")}]]>`;
+}
+
 async function run() {
   const res = await fetch(SOURCE);
   const xml = await res.text();
@@ -20,11 +25,11 @@ async function run() {
 
   for (const i of items) {
     out += `<item>`;
-    out += `<title>${i.title[0]}</title>`;
-    out += `<link>${i.link[0]}</link>`;
-    out += `<description>${i.description?.[0] ?? ""}</description>`;
+    out += `<title>${cdata(i.title?.[0] ?? "")}</title>`;
+    out += `<link>${i.link?.[0] ?? ""}</link>`;
+    out += `<description>${cdata(i.description?.[0] ?? "")}</description>`;
     out += `<pubDate>${i.pubDate?.[0] ?? ""}</pubDate>`;
-    out += `<guid>${i.guid?.[0] ?? ""}</guid>`;
+    out += `<guid>${i.guid?.[0] ?? i.link?.[0] ?? ""}</guid>`;
     out += `</item>`;
   }
 
@@ -34,3 +39,4 @@ async function run() {
 }
 
 await run();
+
