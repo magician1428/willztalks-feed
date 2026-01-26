@@ -2,34 +2,58 @@ name: Update Latest RSS
 
 on:
   schedule:
-    - cron: '0 * * * *' # runs every hour
-  workflow_dispatch: # allows manual trigger
+    - cron: '0 * * * *'  # every hour
+  workflow_dispatch:  # allows manual trigger
 
 jobs:
   update-rss:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Fetch latest RSS
-        run: |
-          curl -s "https://fetchrss.com/feed/1vBf4gGfS2h01vBf4M7VY2YW.rss" > fetched.xml
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
-      - name: Keep last 5 items
+      - name: Install dependencies
         run: |
-          # Extract channel info
-          head -n 20 fetched.xml > header.xml
-          # Extract last 5 <item> blocks (naive approach)
-          grep -Poz '(?s)<item>.*?</item>' fetched.xml | tail -n 5 > items.xml
-          # Combine into latest.xml
-          cat header.xml items.xml > latest.xml
-          echo "</channel></rss>" >> latest.xml
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Commit & push
+      - name: Fetch and update latest.xml
+        run: |
+          python3 - << 'EOF'
+          import xml.etree.ElementTree as ET
+          import requests
+
+          # URL of the FetchRSS feed
+          url = "https://fetchrss.com/feed/1vBf4gGfS2h01vBf4M7VY2YW.rss"
+
+          # Fetch feed
+          r = requests.get(url)
+          r.raise_for_status()
+
+          # Parse feed
+          tree = ET.ElementTree(ET.fromstring(r.content))
+          root = tree.getroot()
+          channel = root.find('channel')
+
+          # Keep only last 5 items
+          items = channel.findall('item')
+          for item in items[:-5]:
+              channel.remove(item)
+
+          # Write safely to latest.xml
+          tree.write("latest.xml", encoding="utf-8", xml_declaration=True)
+          EOF
+
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add latest.xml
-          git commit -m "Update latest RSS" || echo "No changes"
+          git commit -m "Update latest RSS" || echo "No changes to commit"
           git push
