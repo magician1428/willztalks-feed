@@ -1,0 +1,35 @@
+name: Update Latest RSS
+
+on:
+  schedule:
+    - cron: '0 * * * *' # runs every hour
+  workflow_dispatch: # allows manual trigger
+
+jobs:
+  update-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Fetch latest RSS
+        run: |
+          curl -s "https://fetchrss.com/feed/1vBf4gGfS2h01vBf4M7VY2YW.rss" > fetched.xml
+
+      - name: Keep last 5 items
+        run: |
+          # Extract channel info
+          head -n 20 fetched.xml > header.xml
+          # Extract last 5 <item> blocks (naive approach)
+          grep -Poz '(?s)<item>.*?</item>' fetched.xml | tail -n 5 > items.xml
+          # Combine into latest.xml
+          cat header.xml items.xml > latest.xml
+          echo "</channel></rss>" >> latest.xml
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add latest.xml
+          git commit -m "Update latest RSS" || echo "No changes"
+          git push
