@@ -2,12 +2,15 @@ import fetch from "node-fetch";
 import { parseStringPromise } from "xml2js";
 import fs from "fs";
 
-const SOURCE =
-  "https://fetchrss.com/feed/1vBf4gGfS2h01vBf4M7VY2YW.rss";
+const SOURCE = "https://fetchrss.com/feed/1vBf4gGfS2h01vBf4M7VY2YW.rss";
 
 function cdata(text = "") {
-  // Prevent accidental CDATA termination
   return `<![CDATA[${text.replace(/]]>/g, "]]]]><![CDATA[>")}]]>`;
+}
+
+// Remove unsafe tags like <iframe>
+function sanitizeDescription(html = "") {
+  return html.replace(/<iframe[\s\S]*?<\/iframe>/gi, "");
 }
 
 async function run() {
@@ -18,18 +21,34 @@ async function run() {
   const items = parsed.rss.channel[0].item.slice(0, 5);
 
   let out = `<?xml version="1.0" encoding="UTF-8"?>`;
-  out += `<rss version="2.0"><channel>`;
+  out += `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>`;
   out += `<title>WillzTalks</title>`;
   out += `<link>https://willztalks.com</link>`;
   out += `<description>Latest posts from WillzTalks</description>`;
+  out += `<language>en-gb</language>`;
+  out += `<atom:link href="https://willztalks.com/rss.xml" rel="self" type="application/rss+xml" />`;
 
   for (const i of items) {
+    // fix guid
+    let guid = "";
+    if (i.guid?.[0]) {
+      if (typeof i.guid[0] === "object" && i.guid[0]._ != null) {
+        guid = i.guid[0]._;
+      } else if (typeof i.guid[0] === "string") {
+        guid = i.guid[0];
+      } else {
+        guid = i.link?.[0] ?? "";
+      }
+    } else {
+      guid = i.link?.[0] ?? "";
+    }
+
     out += `<item>`;
     out += `<title>${cdata(i.title?.[0] ?? "")}</title>`;
     out += `<link>${i.link?.[0] ?? ""}</link>`;
-    out += `<description>${cdata(i.description?.[0] ?? "")}</description>`;
+    out += `<description>${cdata(sanitizeDescription(i.description?.[0] ?? ""))}</description>`;
     out += `<pubDate>${i.pubDate?.[0] ?? ""}</pubDate>`;
-    out += `<guid>${i.guid?.[0] ?? i.link?.[0] ?? ""}</guid>`;
+    out += `<guid>${guid}</guid>`;
     out += `</item>`;
   }
 
@@ -39,4 +58,3 @@ async function run() {
 }
 
 await run();
-
