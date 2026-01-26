@@ -64,11 +64,15 @@
             color: #fff;
             margin-bottom: 10px;
         }
-        video {
+        video, .mega-embed {
             width: 100%;
             border-radius: 8px;
             background: #000;
             margin-bottom: 10px;
+        }
+        .mega-embed {
+            aspect-ratio: 16/9;
+            border: none;
         }
         .video-text {
             font-size: 14px;
@@ -150,6 +154,25 @@
 
         let allVideos = [];
 
+        // Convert Mega URL to embed URL
+        function getMegaEmbedUrl(megaUrl) {
+            if (!megaUrl) return null;
+
+            // Handle format: https://mega.nz/file/FILE_ID#KEY
+            let match = megaUrl.match(/mega\.nz\/file\/([^#]+)#(.+)/);
+            if (match) {
+                return `https://mega.nz/embed/${match[1]}#${match[2]}`;
+            }
+
+            // Handle old format: https://mega.co.nz/#!FILE_ID!KEY or https://mega.nz/#!FILE_ID!KEY
+            match = megaUrl.match(/mega\.(?:co\.)?nz\/#!([^!]+)!(.+)/);
+            if (match) {
+                return `https://mega.nz/embed/${match[1]}#${match[2]}`;
+            }
+
+            return null;
+        }
+
         function init() {
             if (typeof videos !== 'undefined') {
                 // Sort by date descending (most recent first)
@@ -198,8 +221,17 @@
             container.innerHTML = videoList.map((video, index) => {
                 const videoUrl = BASE_URL + video.video_path;
                 const downloadUrl = video.mega_url || videoUrl;
+                const megaEmbedUrl = getMegaEmbedUrl(video.mega_url);
                 const title = highlightText(video.title || 'Untitled', query);
                 const text = highlightText(video.text || '', query);
+
+                // Use Mega embed if available, otherwise use local video
+                const playerHtml = megaEmbedUrl
+                    ? `<iframe class="mega-embed" src="${megaEmbedUrl}" allowfullscreen></iframe>`
+                    : `<video controls preload="metadata">
+                            <source src="${videoUrl}" type="video/mp4">
+                            Your browser does not support video playback.
+                       </video>`;
 
                 return `
                     <div class="video-card">
@@ -208,10 +240,7 @@
                             ${downloadUrl ? `<a href="${downloadUrl}" class="download-link" target="_blank">Download</a>` : ''}
                         </div>
                         <div class="video-title">${title}</div>
-                        <video controls preload="metadata">
-                            <source src="${videoUrl}" type="video/mp4">
-                            Your browser does not support video playback.
-                        </video>
+                        ${playerHtml}
                         ${text ? `
                             <div class="video-text" id="text-${index}">${text}</div>
                             <button class="expand-btn" onclick="toggleText(${index})">Show more</button>
