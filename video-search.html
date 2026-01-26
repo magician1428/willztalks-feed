@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WillzTalks Video Search</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #e0e0e0;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        #search {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background: #2a2a2a;
+            color: #fff;
+        }
+        #search:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .results-info {
+            margin-bottom: 15px;
+            color: #888;
+            font-size: 14px;
+        }
+        .video-card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .video-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .video-date {
+            color: #888;
+            font-size: 14px;
+        }
+        .video-title {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            background: #000;
+            margin-bottom: 10px;
+        }
+        .video-text {
+            font-size: 14px;
+            color: #aaa;
+            line-height: 1.5;
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-text.expanded {
+            max-height: none;
+        }
+        .video-text::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(transparent, #2a2a2a);
+        }
+        .video-text.expanded::after {
+            display: none;
+        }
+        .expand-btn {
+            background: none;
+            border: none;
+            color: #007bff;
+            cursor: pointer;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        .download-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .download-link:hover {
+            background: #0056b3;
+        }
+        .no-results {
+            text-align: center;
+            color: #888;
+            padding: 40px;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        mark {
+            background: #ff0;
+            color: #000;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WillzTalks Video Search</h1>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search videos by title, text, or caption...">
+    </div>
+
+    <div class="results-info" id="results-info"></div>
+    <div id="video-list">
+        <div class="loading">Loading videos...</div>
+    </div>
+
+    <script src="https://feed.willztalks.com/videos.js"></script>
+    <script>
+        const BASE_URL = 'https://feed.willztalks.com/';
+        const RESULTS_PER_PAGE = 10;
+
+        let allVideos = [];
+
+        function init() {
+            if (typeof videos !== 'undefined') {
+                // Sort by date descending (most recent first)
+                allVideos = videos.sort((a, b) => new Date(b.date) - new Date(a.date));
+                displayVideos(allVideos.slice(0, RESULTS_PER_PAGE));
+                updateResultsInfo(RESULTS_PER_PAGE, allVideos.length, '');
+            } else {
+                document.getElementById('video-list').innerHTML = '<div class="no-results">Failed to load videos</div>';
+            }
+        }
+
+        function searchVideos(query) {
+            if (!query.trim()) {
+                return allVideos;
+            }
+
+            const terms = query.toLowerCase().split(/\s+/);
+            return allVideos.filter(video => {
+                const searchable = `${video.title} ${video.text} ${video.caption}`.toLowerCase();
+                return terms.every(term => searchable.includes(term));
+            });
+        }
+
+        function highlightText(text, query) {
+            if (!query.trim() || !text) return text;
+
+            const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+            let result = text;
+
+            terms.forEach(term => {
+                const regex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+                result = result.replace(regex, '<mark>$1</mark>');
+            });
+
+            return result;
+        }
+
+        function displayVideos(videoList, query = '') {
+            const container = document.getElementById('video-list');
+
+            if (videoList.length === 0) {
+                container.innerHTML = '<div class="no-results">No videos found</div>';
+                return;
+            }
+
+            container.innerHTML = videoList.map((video, index) => {
+                const videoUrl = BASE_URL + video.video_path;
+                const downloadUrl = video.mega_url || videoUrl;
+                const title = highlightText(video.title || 'Untitled', query);
+                const text = highlightText(video.text || '', query);
+
+                return `
+                    <div class="video-card">
+                        <div class="video-header">
+                            <span class="video-date">${video.date}</span>
+                            ${downloadUrl ? `<a href="${downloadUrl}" class="download-link" target="_blank">Download</a>` : ''}
+                        </div>
+                        <div class="video-title">${title}</div>
+                        <video controls preload="metadata">
+                            <source src="${videoUrl}" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                        ${text ? `
+                            <div class="video-text" id="text-${index}">${text}</div>
+                            <button class="expand-btn" onclick="toggleText(${index})">Show more</button>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleText(index) {
+            const textEl = document.getElementById(`text-${index}`);
+            const btn = textEl.nextElementSibling;
+
+            if (textEl.classList.contains('expanded')) {
+                textEl.classList.remove('expanded');
+                btn.textContent = 'Show more';
+            } else {
+                textEl.classList.add('expanded');
+                btn.textContent = 'Show less';
+            }
+        }
+
+        function updateResultsInfo(showing, total, query) {
+            const info = document.getElementById('results-info');
+            if (query) {
+                info.textContent = `Showing ${showing} of ${total} results for "${query}"`;
+            } else {
+                info.textContent = `Showing ${showing} most recent of ${total} videos`;
+            }
+        }
+
+        // Debounce search
+        let searchTimeout;
+        document.getElementById('search').addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                const query = e.target.value;
+                const results = searchVideos(query);
+                const showing = results.slice(0, RESULTS_PER_PAGE);
+                displayVideos(showing, query);
+                updateResultsInfo(showing.length, results.length, query);
+            }, 300);
+        });
+
+        // Initialize on load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    </script>
+</body>
+</html>
