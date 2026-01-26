@@ -1,0 +1,8 @@
+{
+  "name": "willztalks-feed",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "xml2js": "^0.4.23"
+  }
+}
