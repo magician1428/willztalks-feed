@@ -31,10 +31,19 @@ async function run() {
   out += `<atom:link href="https://willztalks.com/rss.xml" rel="self" type="application/rss+xml" />`;
 
   for (const i of items) {
-    // safe guid
-    let guid = i.guid?.[0];
-    if (typeof guid === "object" && guid._) guid = guid._;
-    else if (typeof guid !== "string") guid = i.link?.[0] ?? "urn:uuid:" + Math.random().toString(36).slice(2);
+    // Safe guid
+    let guid;
+    if (i.guid?.[0]) {
+      if (typeof i.guid[0] === "object" && i.guid[0]._ != null) {
+        guid = i.guid[0]._;
+      } else if (typeof i.guid[0] === "string") {
+        guid = i.guid[0];
+      } else {
+        guid = i.link?.[0] ?? "urn:uuid:" + Math.random().toString(36).slice(2);
+      }
+    } else {
+      guid = i.link?.[0] ?? "urn:uuid:" + Math.random().toString(36).slice(2);
+    }
 
     out += `<item>`;
     out += `<title>${cdata(i.title?.[0] ?? "")}</title>`;
