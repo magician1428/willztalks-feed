@@ -20,6 +20,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "6db324801c96",
+    "video_path": "downloads/You must fill out your demand further than they can twist it away from being effective.mp4",
+    "mega_url": "Exported /willz_videos/You must fill out your demand further than they can twist it away from being effective.mp4: https://mega.nz/file/fIMwQDJZ#xCIbx1lFdjClmPBpZJ6IjHPHvnYA2JsH9OXEmw5wu5Q",
+    "title": "You must fill out your demand further than they can twist it away from being effective",
+    "date": "2026-01-31",
+    "text": "abolishing ice must mean abolishing immigrations and custom enforcement, i.e. not enforcing immigration law. And that's what I mean. I don't think the American Empire can make any one illegal on-stroll in land, but that's not what a lot of libs mean when they say it, even if they do capitulate to saying it from the current pressure that's happening. What they mean is taking the thing that ice is, which is a terrorist organization meant to enforce arbitrary and racial laws, and just making a different terrorist organization with a different name. And if we want radical, effective change from this real, radical, revolutionary moment, we need to be very precise, which is that we must abolish all conceptions that underpinned ice. The hyper militarized society that America is and has become, the hyper racialized culture and government that America has always been, that enables an ethnic cleansing by one and many of our government agencies, and then the newer and developed phenomenon of funneling that racism into anti-immigration sentiment through the mass militarization of our border. All of those and many more precepts that justify and led to the large upscale of terrorism by ice must be abolished and destroyed well before we can even succeed in merely renaming.",
+    "caption": "You must fill out your demand further than they can twist it away from being effective",
+    "source": "google_drive"
+  },
+  {
     "id": "dacdf4531bcc",
     "video_path": "downloads/I stg the *********** is the ****** of ******** , ( am I memey and relatable now) pwease give m.mp4",
     "mega_url": "Exported /willz_videos/I stg the *********** is the ****** of ******** , ( am I memey and relatable now) pwease give m.mp4: https://mega.nz/file/WJ8RUBYC#XXaafqjjjkk3x_4VUj_wFB9p8t3AGe5ddHZBH97pcVQ",
