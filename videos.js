@@ -277,6 +277,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "70a425a25da6",
+    "video_path": "downloads/Notice the normalization and how to undermine it.mp4",
+    "mega_url": "Exported /willz_videos/Notice the normalization and how to undermine it.mp4: https://mega.nz/file/fEMlEApA#a7N_k_aCTgq2ASsBpTuEUPUq0HzKtaGp1ftLJeaq25E",
+    "title": "Notice the normalization and how to undermine it",
+    "date": "2026-01-24",
+    "text": "A hundred Nazis marched in the march for life today, and not a single question or word of condemnation from JDPants who was speaking. And a lot could be said about that, and this isn't the first evidence that they were all Nazis, but I want you to know how you reacted to that. Because was that surprising? No. Was that even more alarming? No. And trust me, if you see the pictures look up Patreon front in DC, they're Nazis. They're doing Nazi things. Patreon is a wet premises Nazi organization. But I mentioned this not because it's particularly surprising, but because it is so normal. And there is a large large media machine on both sides from the Dems who just want to devote harder and kind of trust the, you know, white supremacist wearing blue to the Republican side that are gaslighting us from not believing that the violence is actually happening. There are some fascists that are willing to admit it. There are some fascists that are willing to openly say it, and they're not our allies, but they are helpful. Because at the very least, they let us have a target. They let us know what's actually happening. And Patreon front is one of those. They will say the quiet part out loud. They will say they are expelling immigrants, not because they give a fuck about boundaries. I mean, they're happy to take white people in, but because they are black and brown. And so if you're interested in why the administration you're doing things in a certain way, why Stephen Miller believes certain things, go look to the people that are being honest about it. And Nazis allire, so this is well known, but they're less coordinated liars. It's easier to pull the truth from them. Because you won't beat the multi-villain dollar, medium machine that is spinning, spinning, spinning, spinning, spinning everything. You might beat a random Nazi with a blog.",
+    "caption": "Notice the normalization and how to undermine it",
+    "source": "google_drive"
+  },
+  {
     "id": "e9ef21375797",
     "video_path": "downloads/2026-01-23_21-03-54_UTC.mp4",
     "instagram_url": "",
