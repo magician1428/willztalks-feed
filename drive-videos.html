@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WillzTalks - Google Drive Videos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #e0e0e0;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .video-card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .video-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .video-date {
+            color: #888;
+            font-size: 14px;
+        }
+        .video-title {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .drive-embed {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 8px;
+            background: #000;
+            border: none;
+        }
+        .view-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .view-link:hover {
+            background: #0056b3;
+        }
+        .no-results {
+            text-align: center;
+            color: #888;
+            padding: 40px;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #ff6b6b;
+            background: #2a2a2a;
+            border-radius: 12px;
+        }
+        .results-info {
+            margin-bottom: 15px;
+            color: #888;
+            font-size: 14px;
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>WillzTalks Videos</h1>
+    <p class="subtitle">Latest videos from Google Drive</p>
+
+    <div class="nav-links">
+        <a href="video-search.html">Search Archive</a>
+        <a href="drive-feed.xml">RSS Feed</a>
+    </div>
+
+    <div class="results-info" id="results-info"></div>
+    <div id="video-list">
+        <div class="loading">Loading videos...</div>
+    </div>
+
+    <script>
+        const FEED_URL = 'drive-feed.xml';
+        const MAX_VIDEOS = 10;
+
+        async function loadVideos() {
+            const container = document.getElementById('video-list');
+            const info = document.getElementById('results-info');
+
+            try {
+                const response = await fetch(FEED_URL);
+                if (!response.ok) {
+                    throw new Error(`Failed to load feed: ${response.status}`);
+                }
+
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(xmlText, 'application/xml');
+
+                const parseError = xml.querySelector('parsererror');
+                if (parseError) {
+                    throw new Error('Failed to parse RSS feed');
+                }
+
+                const items = xml.querySelectorAll('item');
+
+                if (items.length === 0) {
+                    container.innerHTML = '<div class="no-results">No videos available yet. Check back soon!</div>';
+                    info.textContent = '';
+                    return;
+                }
+
+                const videos = Array.from(items).slice(0, MAX_VIDEOS).map(item => {
+                    const title = item.querySelector('title')?.textContent || 'Untitled';
+                    const link = item.querySelector('link')?.textContent || '';
+                    const pubDate = item.querySelector('pubDate')?.textContent || '';
+                    const guid = item.querySelector('guid')?.textContent || '';
+
+                    return { title, link, pubDate, guid };
+                });
+
+                info.textContent = `Showing ${videos.length} most recent videos`;
+
+                container.innerHTML = videos.map(video => {
+                    const embedUrl = `https://drive.google.com/file/d/${video.guid}/preview`;
+                    const formattedDate = video.pubDate ? formatDate(video.pubDate) : '';
+
+                    return `
+                        <div class="video-card">
+                            <div class="video-header">
+                                <span class="video-date">${formattedDate}</span>
+                                <a href="${video.link}" class="view-link" target="_blank">Open in Drive</a>
+                            </div>
+                            <div class="video-title">${escapeHtml(video.title)}</div>
+                            <iframe
+                                class="drive-embed"
+                                src="${embedUrl}"
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    `;
+                }).join('');
+
+            } catch (error) {
+                console.error('Error loading videos:', error);
+                container.innerHTML = `<div class="error">Failed to load videos: ${error.message}</div>`;
+                info.textContent = '';
+            }
+        }
+
+        function formatDate(dateString) {
+            try {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-GB', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            } catch {
+                return dateString;
+            }
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Load on page ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadVideos);
+        } else {
+            loadVideos();
+        }
+    </script>
+</body>
+</html>
