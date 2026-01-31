@@ -287,6 +287,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "6441225347ff",
+    "video_path": "downloads/They are doing their job exactly as intended, which is to distract dismiss and justify while al.mp4",
+    "mega_url": "Exported /willz_videos/They are doing their job exactly as intended, which is to distract dismiss and justify while al.mp4: https://mega.nz/file/rFdlRSJQ#Uwd08KSJnrBETGDgooQLE1_8gk3RfZSDJ6LBxAGY6H4",
+    "title": "They are doing their job exactly as intended, which is to distract dismiss and justify while al",
+    "date": "2026-01-24",
+    "text": "This week, seven Dems voted to fund ICE. And what I think most people are missing is Chuck Schumer probably said yes to them doing so. This is not just a them problem. It is a structure of what the Democratic Party is, which is not to actually effectively oppose fascism. If so, they would have stopped a long time ago. There would not still be negotiating giving pieces of the fascist Gestapo more money, but it is to be bad at stopping them. The goal is to continue failing so that we feel like we just have to fix them a little bit more. And then they take all the energy and that energy could have been used to fight them. That's the function. And they keep proving this. And then you want that question me during the election for saying this, look at me now. But the only solution to this, necessarily, is you can do it and fuck you on the voting booth, but on the streets, start working against all fascists. Red or blue, or they're enablers. Because if you don't very quickly and effectively outside of elections, mobilize against fascists of any type, then they will win. And what the Democrats do very, very well is distracting you from what actual fascism looks like and every motherfucker that signed on, unofficially or officially, to ice funding ever is complicit. And that is the vast majority, whether they want you to never do not, of Democrats.",
+    "caption": "They are doing their job exactly as intended, which is to distract dismiss and justify while al",
+    "source": "google_drive"
+  },
+  {
     "id": "e9ef21375797",
     "video_path": "downloads/2026-01-23_21-03-54_UTC.mp4",
     "instagram_url": "",
