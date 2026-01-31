@@ -257,6 +257,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "1fd68fc26db3",
+    "video_path": "downloads/yes, but it\u2019s not unique to America and there might be some unique things, but it\u2019s not univers.mp4",
+    "mega_url": "Exported /willz_videos/yes, but it\u2019s not unique to America and there might be some unique things, but it\u2019s not univers.mp4: https://mega.nz/file/GU1iURQI#-64L57wBmoSE0e-vmlO7mgQuj7WUK5A5l4Hv4URX4os",
+    "title": "yes, but it\u2019s not unique to America and there might be some unique things, but it\u2019s not univers",
+    "date": "2026-01-24",
+    "text": "This is a form of American exceptionalism, even if it's justified. Because yes, Nazis were largely inspired by American fascists. That's true, but they were also inspired by the Turks, right? They were inspired by the Armenian genocide. They were inspired by the previous German actions in Namibia, the genocide of the Haryari and Nama people. They were inspired by the British colonizers and the French colonizers, like if we just focus on American fascism, we are actually missing a large part of the picture, and that is not intended to absorb American fascism of anything at all. It was disgusting. And let me be very clear. I understand why people in America especially make this point, because oftentimes the detriment and harm and actual severity of American fascism from the KKK to actual, like the system of slavery, to now the prison and industrial complex, etc. are underpaid. That's fair. But when we just reverse it and go from America is the perfect, to America is a unique evil. I'm not questioning whether it's a extraordinarily and perhaps supremely bad evil, but it is not unique. And when we go to that, we're not actually deconstructing American exception. We're not actually deconstructing the systems that we want to deconstruct. We're recreating it in a different, possibly, less harmful way, but not a fully liberatory way. And if you want to understand modern-day Nazis, yes, you need to understand American racism. That's true. But you also do need to understand German Nazis and British Nazis, French Nazis, and French colonizers, and German colonizers. Because America was not the only people to go through this. We were not really even the first or second. Though, of course, I think there were some unique things with the American fascist movement and the development of the KKK, etc. That's not in question, but it's not a full picture. And we can't recreate the American exceptionalism, or as I have talked about previously, the puritanical values and aims in the left movement, because we won't actually deconstruct the very thing that we're attacking.",
+    "caption": "yes, but it\u2019s not unique to America and there might be some unique things, but it\u2019s not univers",
+    "source": "google_drive"
+  },
+  {
     "id": "e9ef21375797",
     "video_path": "downloads/2026-01-23_21-03-54_UTC.mp4",
     "instagram_url": "",
