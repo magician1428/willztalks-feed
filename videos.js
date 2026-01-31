@@ -227,6 +227,16 @@ var videos = [
     "source": "instagram"
   },
   {
+    "id": "3bf581074c8d",
+    "video_path": "downloads/The institutions have found the narrative, and it\u2019s the same narrative. They always have about .mp4",
+    "mega_url": "Exported /willz_videos/The institutions have found the narrative, and it\u2019s the same narrative. They always have about .mp4: https://mega.nz/file/eVszFKZI#jw1ZX4pe6Ss1h4qRptFFdfyYsorxx_8aaj7By7xdl3M",
+    "title": "The institutions have found the narrative, and it\u2019s the same narrative. They always have about ",
+    "date": "2026-01-24",
+    "text": "You mean to tell me that five ICE officers have to obtain one person and some of those ICE officers need to pull out their pistol and pistol whip that person? Have you ever seen a cop do this? Yes, the fuck I have, Clarkson. Like, very famously this has happened before, again and again and again. And the level of naivete to condemn and attack conservatives who are rejecting this obvious state terrorist murder, just like you do when you bootleg the fuck out of the cops, like you do in this video. Observe trained on first of all de-escalation tactics and yet they escalate every goddamn situation. They're in that's why they murder so many people. Second of all, everything that they do when it comes to detaining a person who is breaking the law serves a purpose. And that purpose is to inflict violence on them, especially if they are black and brown. This is infuriating. Every time we see ICE, do a particularly violent act which they are expected to do considering they are state terrorists. We get moderates coming out of the woodwork saying this is why we need cops back as if they weren't originally state terrorists. Fuck you, you're just being affected now. So yes, fuck ICE, but the answer cannot be fuck ICE because they're not cops. We don't say fuck the Taliban because they're not al-Qaeda. And if you do, you're being disrespectful to the victims of all of the state violence that came before this particular uptick in it. So yeah, fuck ICE, but if you replace them with a more palatable terrorist organization, you're not helping shit and you're actually enabling them.",
+    "caption": "The institutions have found the narrative, and it\u2019s the same narrative. They always have about ",
+    "source": "google_drive"
+  },
+  {
     "id": "e9ef21375797",
     "video_path": "downloads/2026-01-23_21-03-54_UTC.mp4",
     "instagram_url": "",
