@@ -122,6 +122,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "2979cd042c02",
+    "video_path": "downloads/Live from MN: DHS has released a really quite gross picture claiming that a portion of a DHS fi.mp4",
+    "mega_url": "Exported /willz_videos/Live from MN: DHS has released a really quite gross picture claiming that a portion of a DHS fi.mp4: https://mega.nz/file/PNMTlZ4L#Nysp9dfX_NXC4io-U9qzmhyCpRAQ5EB9uy5q0RKzUDI",
+    "title": "Live from MN: DHS has released a really quite gross picture claiming that a portion of a DHS fi",
+    "date": "2026-01-25",
+    "text": "A protester allegedly bit off the finger of a DHS agent, I just have to ask why didn't that DHS agent just comply? Like, that protester was just doing his job and then enacting his right to self-defense because like, why was a finger even in his mouth in the first place? Either way, I don't know, I really hope that that protester's teeth are okay, because that's the real danger. Also, we don't know that this has happened. DHS reported it, Fox News reported it, CNN reported it, in any case, pray for the protester's teeth. Because these agitator agents, she's keep forcing their fingers in everyone's mouths.",
+    "caption": "Live from MN: DHS has released a really quite gross picture claiming that a portion of a DHS fi",
+    "source": "google_drive"
+  },
+  {
     "id": "859f878b1c8e",
     "video_path": "downloads/2026-01-24_17-11-17_UTC.mp4",
     "instagram_url": "",
