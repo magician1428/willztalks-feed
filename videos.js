@@ -247,6 +247,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "75b37ca24055",
+    "video_path": "downloads/What you will see is that when anger or flash points do happen, the people that went out and ar.mp4",
+    "mega_url": "Exported /willz_videos/What you will see is that when anger or flash points do happen, the people that went out and ar.mp4: https://mega.nz/file/rclnwQBJ#3aS1rFrzeobI9JCnL-oIYKShmM1NleJ1_2r9WkR8vfE",
+    "title": "What you will see is that when anger or flash points do happen, the people that went out and ar",
+    "date": "2026-01-24",
+    "text": "There is no magical amount of anger that translates into action. Or at least we've already well passed it. And now the bottlenecks for action or organization, community, and actual ideological education. And I think this is really important when we're talking about politics, because a lot of people, especially the liberals, theory of change for any of this, is just keep pointing out how evil Trump is and we'll move more and more and more people to anti-Trump camp. But there are two things here, because if it's just bad education and Trump already has all the money and power in the government, he's just going to use it to counter this propaganda. So consequently, number two, we need to be doing more than just that. And we need to actually be mobilizing people. And you don't just mobilize from being angry. This is what we saw. If you just get angry, you just go to bed and are sad. But if you become educated and build a community and arm yourself, for example, you feel a lot more powerful. You stop being sad and you start moving that anger into action. And like when I'm making propaganda, this is what I think about, of how am I giving people ideological tools to go out and be effective, recognize Nazis, correctly understand what Nazis believe and how to undermine them, how to build effective community and how not to build effective community, how to taboo certain things or not taboo certain things. These are more material things. Obviously, this is Instagram or TikTok. I can't literally train you, but my goal isn't just to make you angry. It is to make you effective. And that should be yours too.",
+    "caption": "What you will see is that when anger or flash points do happen, the people that went out and ar",
+    "source": "google_drive"
+  },
+  {
     "id": "e9ef21375797",
     "video_path": "downloads/2026-01-23_21-03-54_UTC.mp4",
     "instagram_url": "",
