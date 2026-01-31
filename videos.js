@@ -237,6 +237,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "398fd9f31af8",
+    "video_path": "downloads/Like their goal is to make you break the law, not to enforce the law as like a moral good.mp4",
+    "mega_url": "Exported /willz_videos/Like their goal is to make you break the law, not to enforce the law as like a moral good.mp4: https://mega.nz/file/eUUF3ILS#YszGyQVYndxoTXNV943L4T7lD99CVwSAxp4IUTw4HSU",
+    "title": "Like their goal is to make you break the law, not to enforce the law as like a moral good",
+    "date": "2026-01-24",
+    "text": "I don't think many of y'all get it. The people that had now cops weren't like in school, the hardasses for the rules. They weren't the line leader, they were the fucking bully. Right? They were the person that the teacher fucking hated. Not because they were really hard on the rules, but because they wanted to bully you and have power over you, regardless of how they did it. And if you became a cop and you were a rules lawyer, you would fucking hate the cops because they're all fucking criminals. Like as much as they want to cast whole entire groups as criminals, the only group that I really would say are habitually and consistently criminal and every statistic ever demonstrate that that's universally true is the cops. And if you all don't start thinking in the same terms where you go, okay, I'm not going to ask for them to follow the rules because that's not their job. Right? I'm not going to ask for them to be nicer because they're literally terrorists, right? The only answer is to disarm and bring justice to them. Disarm them, not you. Then you're not taking the threat seriously and I don't I actually don't blame you. There's a billion dollar cop again to, you know, machine convincing you not to take it seriously. Literally more of those cop again, but we got to start working through that real quick. Otherwise, we're all fucked.",
+    "caption": "Like their goal is to make you break the law, not to enforce the law as like a moral good",
+    "source": "google_drive"
+  },
+  {
     "id": "e9ef21375797",
     "video_path": "downloads/2026-01-23_21-03-54_UTC.mp4",
     "instagram_url": "",
