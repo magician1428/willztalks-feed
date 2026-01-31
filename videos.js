@@ -132,6 +132,16 @@ var videos = [
     "source": "google_drive"
   },
   {
+    "id": "06bf49703d68",
+    "video_path": "downloads/It is disgusting that this is what it took and we will never forget even if you do start feckle.mp4",
+    "mega_url": "Exported /willz_videos/It is disgusting that this is what it took and we will never forget even if you do start feckle.mp4: https://mega.nz/file/iZdTUIKC#9foGt41n6Q_TF5s1Bxu7RmqcVHEqYxnD_5xSPyakWKc",
+    "title": "It is disgusting that this is what it took and we will never forget even if you do start feckle",
+    "date": "2026-01-25",
+    "text": "It's currently really reported that a damn is breaking in the Democratic Party and two Senate Democrats are flipping against the H.S. funding in a Senate appropriations bill. And my question of them is was one murder not enough? Was was was was the tens of murders that have already been reported not enough? Was the concentration camps not enough? What's changed? Because it's not the brutality. I mean it's increasing and ratcheting up but that was perfectly predictable. What's changed? And of course I know what's changed. What's changed is not the violence, not the brutality. They couldn't give less of a fucking actually the system and the party they work for profit off of it. What's actually changed is the only way they think they can get away with it. The only way they think they can pretend even to wash the blood that is on their hands is now by appearing to be against it. Because previously they didn't even give a fuck to appear to be against it. Now they do. And the thing that's caused that change is the massive grassroots upswell of organizing and mobilization across America against this. And frankly I don't think that consequence matters. I don't think the consequence of elected officials changing their minds. Imagine they will always support the violent state. But what it does tell me is that we have the fucking people on our side and the people can be mobilized effectively and the democratic ruse of saying just vote harder. Just elect harder is failing. So keep it fucking going. The pressure from the bottom is the only thing that works not only to prove that these elected officials are fucking useless but to actually stand on the ground and resist this terrorist organization. And from the general strike to the rise and effective armed resistance and community defense organizations that's the work that needs to be done. And if anyone tells you that that's too radical or that's too wild or that won't work or we just need to vote hard to tell them to go fuck themselves and ask them how they think the people we do end up electing God forbid make their decisions because what this just proved is that's how they do it. They are responsive. They are symptoms and they are bad fucking symptoms.",
+    "caption": "It is disgusting that this is what it took and we will never forget even if you do start feckle",
+    "source": "google_drive"
+  },
+  {
     "id": "859f878b1c8e",
     "video_path": "downloads/2026-01-24_17-11-17_UTC.mp4",
     "instagram_url": "",
