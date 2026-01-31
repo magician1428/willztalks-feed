@@ -92,6 +92,36 @@ var videos = [
     "likes": 0
   },
   {
+    "id": "aec5948bb337",
+    "video_path": "downloads/2026-01-25_19-49-11_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-25_19-49-11_UTC.mp4: https://mega.nz/file/fclnjTRL#jnYhWIP0cpC9Fv_d4qvoyLjVjRFL6-HA8x29gt46TGU",
+    "title": "2026-01-25 19-49-11 UTC",
+    "date": "2026-01-25",
+    "text": "Remember how you feel in this moment. And allow it to inform every single portion of your politics going forward. Because the biggest and most effective tool the fascists have when they do horrific acts is to either beat it, so you forget this one, or spin spin spin until it's too complicated and you avoid it. And this works the exact same for those that enable fascists. Because the seven Democrats that voted for ice this week are betting you won't remember their names in the midterms are betting you won't remember their names during elections and I promise you, you won't. And that's because they will run the media, they will make you forget it. And the most powerful thing you can do is not necessarily remember every fact of every single thing, but remember how it felt. Remember who you were angry at and why? Because I can promise you, then I will be just as angry. I can promise you, then I will be chastising the same people because I did during the last election. You know what I got? A whole lot of shit for it. And I'm not just angry about this, this isn't about me and it isn't about you, but I want us to be effective political actors in the most effective way we can do that is by stopping them from making us care about one thing every week. And start very quickly, working against in an organised, principled manner, the fascists and their enablers alike. And that starts with you organising with a community that will hold you to account. Because if you have no action and no accountability and no community, you're just and your only outlet is anger at the given thing in the headlines, then of course it'll work. But you have control over that, not the headlines, but whether you have community, whether you have accountability and whether you have a network of action. Because then the next time they ask for your action or ask for your inaction, you got to go talk about it with people and one of you will remember.",
+    "caption": "",
+    "source": "instagram"
+  },
+  {
+    "id": "922478c2df18",
+    "video_path": "downloads/2026-01-25_22-44-16_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-25_22-44-16_UTC.mp4: https://mega.nz/file/rY1DRJhY#-nnCXQbx9023UBEkNFtRCZsdL7lmyUU5vyRC_hNgcOY",
+    "title": "2026-01-25 22-44-16 UTC",
+    "date": "2026-01-25",
+    "text": "I support inflatable frogs at protests, especially if half of them are armed. And a lot of the discourse happening about inflatable frogs or dancing, etc., demonstrates a clear lack of understanding of history of protest culture and like actual fair reactions to libs being really fucking annoying all the time. Like that's fair, right? But the response to that isn't to reject all street theater, because street theater has been a huge part of a lot of especially Western European and American protesting, as that's the context in which I'm speaking. But it's been important to both change the media narrative when we are just doing parades, right? Like it's important that we can't just label everything violent to some extent. And when there is self-defense at protests happening or self-defense in resistance actions happening, it's really helpful to have a front line page about it because that gets pushed down by the media and having good street theater makes that effective. It also makes recruiting very effective and it also makes masking very effective both for medical disability reasons and also identity purposes. There is a reason ice masks and they are trying to make that illegal in some places. And if you number one have a law in the book, barely enforceable don't follow it. Given that you have a medical exemption. But if you're in a fucking frog costume, right, it's going to be a very different type of enforcement and different look, especially people are trying to get away with things that should be legal like community defense. So I think the discussions fair, lives annoying, don't like them. Boo! Does that mean you're a direct street theater? No, it means we use it effectively.",
+    "caption": "",
+    "source": "instagram"
+  },
+  {
+    "id": "d2afa7f0b456",
+    "video_path": "downloads/Michael Parenti Died today at 92, read and learn from his work.mp4",
+    "mega_url": "Exported /willz_videos/Michael Parenti Died today at 92, read and learn from his work.mp4: https://mega.nz/file/SN0ATAaB#NyMzUp3M_xxf1vbnGFMVbS9u9REC6sWHEhMS2EzVURI",
+    "title": "Michael Parenti Died today at 92, read and learn from his work",
+    "date": "2026-01-25",
+    "text": "Micro-parente at 92 died today, and you should read his work. If you want a good background in Marxist analyses of history, if you've ever been frustrated by basically any online leftist and you've been like, hmm, I wonder if someone has a better idea. He does. And his lectures are freely available online, and actually quite accessible, and if you don't want to listen to his lectures, his books are fantastic. I'm currently reading Blackshirts and Reds. Because understanding history and the previous struggles that have happened, and how and why they happened, is absolutely necessary if you want to be effective in actually undermining the current power structure that is, or if you've just ever been frustrated by other leftists to appear to never want to win, or rightist to appear to keep winning. No political theorist is perfect, and I don't fully endorse everything Michael Burranti says. But I do think, if especially you're beginning to want to read things or listen to things, he is a great starting point, and his work is freely available. So please go check it out, at least in memoriam, because that guy made incredible contributions to American Marxist thought, and American leftism as a whole. And if we don't learn from people that have been through it, we won't win this time.",
+    "caption": "Michael Parenti Died today at 92, read and learn from his work",
+    "source": "google_drive"
+  },
+  {
     "id": "859f878b1c8e",
     "video_path": "downloads/2026-01-24_17-11-17_UTC.mp4",
     "instagram_url": "",
@@ -157,6 +187,26 @@ var videos = [
     "likes": 0
   },
   {
+    "id": "4b0b55eaa1e1",
+    "video_path": "downloads/2026-01-24_02-22-26_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-24_02-22-26_UTC.mp4: https://mega.nz/file/zcFnCbyI#J0EbW8pAVg_8DytihRYpiQNKixn1YfsXb2litUKu5_s",
+    "title": "2026-01-24 02-22-26 UTC",
+    "date": "2026-01-24",
+    "text": "A hundred Nazis marched in the march for life today, and not a single question or word of condemnation from JDPant who is speaking. And a lot could be said about that, and this isn't the first evidence that they were all Nazis, but I want you to know how you reacted to that. Because was that surprising? No. Was that even more alarming? No. And trust me, if you see the pictures, look up Patriot front in DC. They're Nazis. They're doing Nazi things. Patriot front is a wet premises Nazi organization. But I mentioned this not because it's particularly surprising, but because it is so normal. And there is a large large media machine on both sides from the Dems who just want to devote harder and kind of trust the, you know, white supremacist wearing blue to the Republican side that are gaslighting us from not believing that the violence is actually happening. There were some fascists that are willing to admit it. There are some fascists that are willing to openly say it. And they're not our allies, but they are helpful. Because at the very least, they let us have a target. They let us know what's actually happening. And Patriot front is one of those. They will say the quiet part out loud. They will say they are expelling immigrants, not because they give a fuck about boundaries. I mean, they're happy to take white people in, but because they are black and brown. And so if you are interested in why the administration you're doing things in a certain way, why Stephen Miller believes certain things, go look to the people that are being honest about it. And Nazis are liars. This is well known, but they're less coordinated liars. It's easier to pull the truth from them. Because you won't beat the multivillion dollar media machine that is spinning, spinning, spinning, spinning, spinning everything. You might be the random Nazi with a blog.",
+    "caption": "",
+    "source": "instagram"
+  },
+  {
+    "id": "aeca8bdb2ab8",
+    "video_path": "downloads/2026-01-24_13-29-09_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-24_13-29-09_UTC.mp4: https://mega.nz/file/iYM1ARbJ#ChZVO-cq4iNQpRWXCgRPllHCOpMbxaAl3OT1RXg_NP8",
+    "title": "2026-01-24 13-29-09 UTC",
+    "date": "2026-01-24",
+    "text": "Robbery Robbery Robbery",
+    "caption": "",
+    "source": "instagram"
+  },
+  {
     "id": "e9ef21375797",
     "video_path": "downloads/2026-01-23_21-03-54_UTC.mp4",
     "instagram_url": "",
@@ -168,6 +218,26 @@ var videos = [
     "date": "2026-01-23",
     "text": "So this is my impression of an owl, but it's a liberal when you ask them to do anything but vote. NO!",
     "likes": 0
+  },
+  {
+    "id": "8d5892851833",
+    "video_path": "downloads/2026-01-23_00-47-00_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-23_00-47-00_UTC.mp4: https://mega.nz/file/bZs0UYYR#Rlo9kM2EKnYKBxyQu2tVtlql3N6oQuXoBekDpulWr_c",
+    "title": "2026-01-23 00-47-00 UTC",
+    "date": "2026-01-23",
+    "text": "America would love to Balkanize Iran. Let's just be honest about that. It's effectively what we did in Syria. It's very clearly what we're still doing in Yemen, and Libya, and in part Iraq. And I bring this up because I think the popular imagination is that it's one leader versus another. And okay, maybe America will install a bad leader, but the Iranian people can just resist that too. But America's playbook doesn't just start and end up installing a puppet government. Actually, the most common one, especially Fruid Henry Kis\ufffdir's book, the guy that invented this strategy, is to Balkanize, to separate into different disparate and very weak regimes that if America ever wants to further destabilize, they can just fund any side of this. And America already has the pieces set in part through support of the Kurds or the Bolaks. I'm not saying support or autonomy or sovereignty for any of these groups is bad. I'm saying that as part of the American Imperial strategy, they do this not because they care about territorial integrity, not because they care about sovereignty, but because they care about leveraging internal schisms to weaken any regime they don't like. Regardless of your moral character of those regimes, it is obvious that our intervention in 2011 in Libya has made Libya notably worse. It is obvious that our interventions in Iraq has made Iraq notably worse. And that is not just in part because we haven't found a better, strong, effective regime in there, but because we've actively blocked through Balkanization and further remettling any development of that area. And so if you are calling for American intervention into Iran, I want you to be aware of the full playbook. You can still call for it. You can still somehow truly believe that that is what is good for Iran. But if you believe that, you better have a good, full understanding of what American intervention playbook looks like. And that very often does not end with a unified, strong Iran, because it did not end in a unified, strong, Iraq, Libya, Syria, or Yemen.",
+    "caption": "",
+    "source": "instagram"
+  },
+  {
+    "id": "3f813aa73eca",
+    "video_path": "downloads/2026-01-23_17-46-05_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-23_17-46-05_UTC.mp4: https://mega.nz/file/bYN3XL7T#oLpW79lCwHFjZ5oXykmobC7RDwYb9nj2bGDcECfooMI",
+    "title": "2026-01-23 17-46-05 UTC",
+    "date": "2026-01-23",
+    "text": "I see that you're always complaining about how Democrats don't have a plan, but what's your plan? Do you think that I have congressional staffers? I agree, but it's actually much more than that, because the Democrats would actually be more helpful if they literally did nothing, because their advocacy to give money to train ICE is still giving money to ICE. Their advocacy to put body cams on ICE literally makes them better in court because they just release the body cam footage that benefits them in court. Not only do they are feckless actions just like take steam out of real effective resistance actions, but they also literally vote to fund the things. So if they just didn't do anything, life would actually be better on this specific area issue. So like, yeah, not only are we saying that Democrats should have a better plan, which they should when they pretend to disagree with this stuff, but their plan, I can tell you a better plan, sit down, shut the fuck up, and let people resist how they have to resist. But every time they come out and condemn it or call for peace, they're contributing to the violence.",
+    "caption": "",
+    "source": "instagram"
   },
   {
     "id": "e735e18d4462",
@@ -220,6 +290,26 @@ var videos = [
     "date": "2026-01-22",
     "text": "Uh, Will, you can resist American interference without shutting down civil liberties. How? Explain to me step by step how you can actually end American interference without shutting down some civil liberties. Because like we shit on China a lot for the great firewall of China like maybe we should, but also if they didn't have that, we would just Cambridge Analytica them on any election they do try and host. You can't tell me we want it because we have like we do it all the time to almost every newly decolonized area ever. When they host a free and fair election, we fund opposition parties, we kill opposition leaders, we threaten sanctions or intervention or we surreptitiously mess with their social medias. The literal only way that you actually undermine American intervention like if America funds a protest party in your country, what do you do about it other than shutting down that protest party? And like once again, the people that are going to shit post in my comments are not going to get this far. But I'm not saying all of the shutdowns of non-American countries of civil liberties are justified. That's not my belief. But if you genuinely think you can prevent American interference as long as the most powerful empire and its propaganda machine ever is working to undermine your sovereignty without sacrificing some civil liberties, you're deluded. And yes, sure, some places use that as an excuse, some places are wrongly shutting down civil liberties. But it is a significant portion, right? Like if you kept being invaded and cood and invaded and cood and invaded and cood and everyone around you got invaded and cood, you might be a little scared that if you do open up to an election, America will just fund the alternative party and you'll meet or leave out in your whole country, be sold out to Americans. Like I think that's a reasonable fear. And if that's not taken into account before you critique or attack or undermine any country outside of America, you're not doing so in good faith, you're doing because the empire tells you to. And that scares me. Much more. Much more. So yes, I stand in solidarity for all people fighting for all of their civil liberties everywhere. The largest block to those civil liberties is and always has been American intervention.",
     "likes": 0
+  },
+  {
+    "id": "fd3a73c0bfdd",
+    "video_path": "downloads/2026-01-22_19-50-41_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-22_19-50-41_UTC.mp4: https://mega.nz/file/7IVTACTB#PENCThfB0qqlK5J5G8v4QbhDCWaoOmM6igGhCFi1QIA",
+    "title": "2026-01-22 19-50-41 UTC",
+    "date": "2026-01-22",
+    "text": "Stephen Miller, Trump's chief of staff, is a no-notsie, but he's also Jewish. Which at first glance doesn't make a whole lot of sense, but at second glance it does, and I want to explain other than Stephen Miller being very, very intelligent, unfortunately, why I think he has so much power in the Trump administration. Why is he the number two? And it comes down to two things. Number one, every Nazi wants to be furor. And number two, they love killing each other to be comment. And so number three, the best way you as the person that is in charge of the Nazi movement like Trump is right now, don't get killed by your number two is put someone in there that can't become number one. And the best person to put someone in that can't become number one is a member of one of the groups that those Nazis hate. You can't have a gay guy running a Nazi leadership. Even though historically there have been lots of gay Nazis, you can't have a Jewish man be number one. But they might tolerate if the fear tells them to, a Jewish guy organizing everything. And this happened with the real Nazis. I mean, him, largely couldn't become number one, even though he very openly wanted to, because his ideas were so wildly unpopular. He really believed in all the pagan shit we talk about with Nazis. And that just wouldn't sell to the larger Nazi base or to the German people as a whole. Or even the American furor, George Lincoln Rockwell, he was the founder of the American Nazi party. But his number two was Slavic, which I don't know how DPR and to Nazi racism. But that's just as bad as every other race. They did not like the Slavs. But George Lincoln Rockwell kept on as number two, because he could never be number one. And thus he was not a threat. So Stephen Miller occupies a devastatingly similar position. And I'm not sure. I don't know that this is the logic. I mainly using this as a vehicle to teach you about this history of Nazis. But I do think it's interesting to think about the fact that Stephen Miller as a Jewish man, openly Jewish, and pretty openly a neo-Nazi, has a tamed such power in the administration. And I don't think it's in small part due to the fact that everyone knows he cannot take out Trump. Everyone knows, unlike JD Vance, right? He can't become number one. And also, that means that he can be extraordinarily competent, because if he was competent and could take out Trump, he would be a threat. And by the way, Stephen Miller is extremely competent. Stephen Miller is a white supremacist and a neo-Nazi, and also devastatingly effective at it. So if you want to see a person to understand Trump's policies, if you want to see a person that's actually orchestrating Trump's policies, look at Stephen Miller, look at what he's written. It's really out in the open. And it'll scare you shitless if you aren't already.",
+    "caption": "",
+    "source": "instagram"
+  },
+  {
+    "id": "8d7c0b64c006",
+    "video_path": "downloads/2026-01-22_14-09-37_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-22_14-09-37_UTC.mp4: https://mega.nz/file/DQVUUb6J#jG4N_2JHO9ABsLLx9UPGDw-UpiLSSPK09_V2l8RTEVY",
+    "title": "2026-01-22 14-09-37 UTC",
+    "date": "2026-01-22",
+    "text": "For Mamdani, one just 36% of the moderate vote. Take that and extrapolate it nationwide, and the results are bad. Like, pair that to moderates, like Mikey Chiral and Abigail Stanberger, who won more than 60% of the... That is a dog shit argument, especially from a billionaire-backed think tank, trying to get us to accept blue fascism. So here is why it's just silly. First of all, Mamdani obviously got less of the moderate vote. He was running against a moderate Democrat, extrapolating those numbers to the rest of the nation is very silly for a few reasons. Second of all, if you think the lesson from Mamdani, a left-wing progressive that beat a moderate billionaire-backed Democrat in New York is that we need more moderate billionaire-backed Democrats, you've lost your mind. And third, the number you should actually be extrapolating is turnout, because Mamdani yes got less of the moderate vote because he was running against a moderate, but he massively increased turnout. Something Democrats have repeated many times actually makes them win elections. And fourth, this is silly on its face because your strategy has been tried. The career losers of Kamala and of Hillary are very clear obvious suggestions that the moderate Democrat approach that excites no one and habitually loses elections is not effective. And fifth, you suggest that this is the only way to end a Vance presidency. But if the option is a Gavin Newsom presidency, a man that doesn't believe in abolishing ICE doesn't recognize the genocide going on in Gaza and can't actually stand up to literal fascism entering his state, how different is it? If your suggestion to end red fascism is to implement blue fascism and you're telling us we have no other option off of half-baked dog shit arguments, you are just as bad as the billionaire-backed think tanks on this opposite right. So reject this shit. Not only because their arguments are genuinely laughable, but also because they are serving pretty explicitly the same interests as red fascism, which is the billionaires that want you to think it's fucking hopeless. And they may be right that they've captured the election so much so that they can make this shit hole prophecy true, but that doesn't mean there's no other options. It just means that you should hate those fascists just as much as the red ones.",
+    "caption": "",
+    "source": "instagram"
   },
   {
     "id": "38784df7f102",
@@ -298,6 +388,26 @@ var videos = [
     "date": "2026-01-20",
     "text": "Canada just got much closer to China, signing an agreement that gives Canadian citizens visa-free access to China. And if anything signals the death knell of the neoliberal order, which is the influence networks, the complex political economy by which America and the West generally controlled the world, it is this. Because Canada is America's number one trade partner, and America has worked very hard to control the relationships that their trade partners can have with China. And this is such a fucking spit in the face of that work, openly and as it should, because China's a sovereign country and so is Canada, they have every right to sign in a trade agreement. This signals something larger along with a lot of other things, and actually should be good context for White Trump once Greenland, which is that the soft influences the economy that America built up over the past 70 years of building a hegemonic empire through the IMF and WTO and building of NATO. All of these things are falling apart. NATO is dying before our eyes. And instead of doing it through soft power, America and the fascists in charge currently want to do it through hard power. They literally want to expand America, forcing puppet leaders into Venezuela, pushing for regime change in Iran. And of course, grabbing Greenland. And that is because the tacit and consistent and very effective pressure they used to do is falling apart in front of their eyes. And in its place, they want America to be a very powerful poll in multiple polls. And the only way to be a powerful poll, multiple polls where you can't have tacit control of the whole world like we used to have is by massively expanding. But it will cost them that soft power and can the seeing that and acting on it.",
     "likes": 6
+  },
+  {
+    "id": "6bd913bca9aa",
+    "video_path": "downloads/2026-01-20_17-28-22_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-20_17-28-22_UTC.mp4: https://mega.nz/file/DcdmibCI#SAcL0bXEbK2Q4-VGVBszLYtlfEO37e5DMa62S8CtFDY",
+    "title": "2026-01-20 17-28-22 UTC",
+    "date": "2026-01-20",
+    "text": "And I would be more than happy to pay that if multi-billion dollar corporations were also being properly taxed. But surprise, they're not. That is the only fans creator Sophie Reyn responding to the fascist gubernatorial candidate in Florida. And I want you to notice what she's doing and why, because she's using pretty openly left-leaning populist talking points. And she's able to do that without risking her brand pretty much at all. And that's because of her line of work. Her line of work does not follow the purity and puritanical requirements of other content creators that need to speak up or of other people with proximity to capital. And that is why for a long time I have said, as leftists we don't spend nearly enough time thinking about and actually acting on organizing people in that line of work. And if I want a theory bro out about it, it's because Lenin Marx were wrong about the lumpin. The Black Panther Party proved pretty cohesively. And number two, because portions of our ranks have been infiltrated by fucking swirfs. Regardless, what I want this example to prove is that not only are sex workers a very vulnerable portion of the labor movement, because they are consistently under attack by fascists, but they are also a portion of the labor movement that desperately needs to be mobilized, not only because they are primed to by being separated from the social affectations of a puritanical capitalist system. But in some cases have the material ability to help organize and protect, as that is part of their very job. And while you can have moral critiques all you want of their labor, what a waste of fucking time. You as a leftist can and should be interested in organizing all laborers, especially those that are number one, rife to be mobilized and very much in need of it. And it has always been sex workers, wealthy or poor, which I recognize many of them are very poor, that have been some of the first to be attacked by fascists. And if we don't very quickly get over this fucking puritanism, we are both losing an opportunity to organize a very important portion of the labor movement and a chance to help protect a very vulnerable portion of the labor movement.",
+    "caption": "",
+    "source": "instagram"
+  },
+  {
+    "id": "b2b855e45b02",
+    "video_path": "downloads/2026-01-20_21-40-36_UTC.mp4",
+    "mega_url": "Exported /willz_videos/2026-01-20_21-40-36_UTC.mp4: https://mega.nz/file/TFcXCA6Z#Qg0IFQHB1wWRIEvjUIOuO_CHkIvAvjnI_SQFe8QWjgo",
+    "title": "2026-01-20 21-40-36 UTC",
+    "date": "2026-01-20",
+    "text": "Where's Jill Stein? Where's Jill Stein? Where's Kamala Harris? Where's Joe Biden? Like, is Kamala out here connecting with the protesters fighting against fascists? Because Jill Stein is? Because here's her in October speaking at a pro-Palestine rally. Here's her Instagram literally today calling for the freeing of the hunger strikers supporting Greg Stoker, a pro-Palestine candidate in Congress, and celebrating with Guy Christiansen who just recently won a lawsuit protecting his free speech. And where's Joe Biden? Celebrating Christmas? Okay. Kamala Harris been on a book tour for the past few months. Sure, she's more active on Twitter than again, still pushing a quite sanitized narrative about Ren\u00e9 Nicole Good, who was openly murdered in front of all of our eyes. But then again, Kamala Harris has run for president and is teeing up to run for president again in the second largest party in America, so like Jesus Christ, you can and should have critiques of Jill Stein. God knows I do. But all of the blue mega people yelling at us, where's Jill Stein? Where's Jill Stein? Where's Jill Stein? Well, it's Jill Stein. Look, you can see what she's doing, but we know where Kamala is. She's in a book tour, and suddenly it's okay for her not to be political, even though once again she's teeing up to run for president again, but it's not okay for Jill too. It's not okay. Okay. Cool. No did.",
+    "caption": "",
+    "source": "instagram"
   },
   {
     "id": "d2e01f31a00d",
