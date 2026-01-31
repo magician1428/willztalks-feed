@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>WillzTalks - Google Drive Videos</title>
+<link>https://drive.google.com/drive/folders/1_kmLbJhpG8xJaY3Rhf-vNXSYq7L9RFnH</link>
+<description>Video feed from WillzTalks Google Drive</description>
+<language>en-gb</language>
+<atom:link href="https://feed.willztalks.com/drive-feed.xml" rel="self" type="application/rss+xml" />
+</channel></rss>
